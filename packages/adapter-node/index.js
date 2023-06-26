@@ -55,7 +55,7 @@ export default function (opts = {}) {
 				},
 				external: [
 					// dependencies could have deep exports, so we need a regex
-					...Object.keys(pkg.dependencies || {}).map((d) => new RegExp(`^${d}(\\/.*)?$`))
+					//...Object.keys(pkg.dependencies || {}).map((d) => new RegExp(`^${d}(\\/.*)?$`))
 				],
 				plugins: [
 					nodeResolve({
